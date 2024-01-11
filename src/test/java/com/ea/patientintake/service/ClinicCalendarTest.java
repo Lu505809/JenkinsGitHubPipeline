@@ -78,10 +78,10 @@ class ClinicCalendarTest {
         () -> assertSame(Doctor.avery, patientAppointment.getDoctor()),
         () ->
             assertEquals(
-                "9/18/1990 02:00 PM",
+                "9/18/1990 02:00",
                 patientAppointment
                     .getAppointmentDateTime()
-                    .format(DateTimeFormatter.ofPattern("M/d/yyyy hh:mm a"))));
+                    .format(DateTimeFormatter.ofPattern("M/d/yyyy hh:mm"))));
   }
 
   @Test
